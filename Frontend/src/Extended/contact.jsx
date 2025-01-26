@@ -6,7 +6,7 @@ const ContactUs = () => {
       <div className="max-w-4xl mx-auto px-4 py-10">
         <h1 className="text-3xl font-bold text-center mb-6">Contact Us</h1>
         <p className="text-center text-lg mb-10">
-          Got a question, suggestion, or story to share? We'd love to hear from
+          Got a question, suggestion, or story to share? We'd love to hear from 
           you! Here's how you can get in touch with us.
         </p>
 
