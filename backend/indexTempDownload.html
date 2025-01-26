@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Downloader</title>
+</head>
+<body>
+    <input type="text" id="videoUrl" placeholder="Enter YouTube URL" />
+    <button id="downloadBtn">Download Video</button>
+
+    <script>
+        document.getElementById('downloadBtn').addEventListener('click', () => {
+            const videoUrl = document.getElementById('videoUrl').value;
+            if (!videoUrl) {
+                alert('Please enter a video URL');
+                return;
+            }
+
+            fetch(`http://127.0.0.1:5000/download?url=${encodeURIComponent(videoUrl)}`)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! Status: ${response.status}`);
+                    }
+                    return response.blob(); // Convert response to a blob
+                })
+                .then(blob => {
+                    // Create a link element and download the file
+                    const url = window.URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = "video.mp4"; // Default file name
+                    document.body.appendChild(a);
+                    a.click();
+                    a.remove();
+                    window.URL.revokeObjectURL(url); // Clean up the URL object
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Failed to download video.');
+                });
+        });
+    </script>
+</body>
+</html>
