@@ -2,11 +2,12 @@ from flask import Flask, request, send_file, jsonify
 import os
 import yt_dlp
 from flask_cors import CORS
+from pathlib import Path
 
 app = Flask(__name__)
 CORS(app)
 
-DOWNLOAD_DIRECTORY = "E:/OtherProjects/Explorers"
+DOWNLOAD_DIRECTORY = str(Path.home() / "Downloads")
 
 @app.route("/download", methods=["POST"])  # Explicitly allow POST
 def download_video():
