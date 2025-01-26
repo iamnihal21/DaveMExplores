@@ -6,7 +6,7 @@ const aboutSections = [
 We’re thrilled to have you join us on this incredible journey of exploration, adventure, and storytelling. At DaveMExplorer, we’re not just travel vloggers—we’re passionate wanderers who believe that every road has a story, every destination has a soul, and every adventure is worth sharing.
 `,
     image:
-      "https://cdn.pixabay.com/photo/2023/08/20/02/09/ai-generated-8201501_960_720.png",
+      "https://carcosmic.com/cdn/shop/articles/ppf_brands_in_india_1100x.jpg?v=1721646979",
     imageAlt: "Company image",
   },
   {
@@ -22,7 +22,7 @@ To inspire, educate, and entertain travelers and dreamers around the world. Whet
     title: "Our Journey So Far",
     content:
       "What started as a passion for road trips and capturing memories on camera has turned into an exciting adventure of vlogging and storytelling. From the high-altitude valleys of Himachal Pradesh to the lush plains of Gujarat, and from bustling cities to tranquil hideaways, our journey has taken us across breathtaking landscapes, diverse cultures, and unforgettable experiences.",
-    image: "/mission.png",
+    image: "https://files.oaiusercontent.com/file-XY7DCbJPYFFGhR6TWmQNtQ?se=2025-01-26T13%3A38%3A15Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Dc66ab3f5-9418-4308-b31e-ac00cccffbfe.webp&sig=FFxHQf0N12yhILHhMEOIyTYDtv0yhYmF7DqEpwsAkPw%3D",
     imageAlt: "Mission image",
   },
 ];
