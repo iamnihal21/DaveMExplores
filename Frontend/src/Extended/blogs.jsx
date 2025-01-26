@@ -5,7 +5,7 @@ const blogPosts = [
     id: 1,
     category: "Tutorial",
     date: new Date("2024-10-01"),
-    title: "How to quickly deploy a static website",
+    title: `Maulik Mahendrakumar Dave: The Fastest Car Rider to Conquer the Highest to Lowest Altitude Road`,
     content: `From Spiti Valley to Ahmedabad: A Record-Breaking Drive by Maulik Mahendrakumar Dave
 In an awe-inspiring display of endurance, precision, and passion for the road, Maulik Mahendrakumar Dave, a car rider from Ahmedabad, Gujarat, achieved a remarkable milestone that blends adventure and determination. On 2nd November 2024, Maulik embarked on an extraordinary journey to become the fastest car rider to travel from the highest altitude motorable road to the lowest altitude motorable road.
 
@@ -37,16 +37,18 @@ Maulik Mahendrakumar Dave's incredible journey from Spiti Valley to Ahmedabad is
 
 Here's to the road less traveled—and those who dare to drive it.`,
     author: {
-      name: "Jese Leos",
-      avatar: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
+      name: "maulik dave",
+      avatar:
+        "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png",
     },
-    iconPath: "M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"
+    iconPath:
+      "M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z",
   },
   {
     id: 2,
     category: "Article",
     date: new Date("2025-01-26"),
-    title: "Our first project with React",
+    title: "From Himalayan Heights to Terai Plains: Nepal's Record-Breaking Journey",
     content: `From the Heights of the Himalayas to the Plains of Nepal: A Record-Breaking Journey
 In a stunning showcase of resilience, adventure, and passion for the road, a car rider from Nepal etched their name in history with a record-breaking journey. On [date], the daring driver set out to achieve the incredible feat of traveling from the highest altitude motorable road in Nepal to the lowest point in record time.
 
@@ -79,14 +81,16 @@ This epic journey from the highest to the lowest motorable roads in Nepal is a t
 Here's to the roads that inspire, the challenges that shape us, and the dreams that drive us forward.`,
     author: {
       name: "Bonnie Green",
-      avatar: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
+      avatar:
+        "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png",
     },
-    iconPath: "M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z"
-  }
-].sort((a, b) => b.date - a.date);  
+    iconPath:
+      "M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z",
+  },
+].sort((a, b) => b.date - a.date);
 
 function formatDate(date) {
-  const options = { year: 'numeric', month: 'long', day: 'numeric' };
+  const options = { year: "numeric", month: "long", day: "numeric" };
   return date.toLocaleDateString(undefined, options);
 }
 
@@ -99,15 +103,24 @@ export default function BlogSection() {
             Our Blog
           </h2>
           <p className="font-light text-black sm:text-xl dark:text-black animate-fade-in-up">
-            We use an agile approach to test assumptions and connect with the needs of your audience early and often.
+            We use an agile approach to test assumptions and connect with the
+            needs of your audience early and often.
           </p>
         </div>
         <div className="grid gap-8">
           {blogPosts.map((post) => (
-            <article key={post.id} className="p-6 bg-base-100 rounded-lg border border-gray-200 shadow-md dark:bg-base-300 dark:border-gray-700 hover:shadow-lg transition-transform duration-300 animate-fade-in-up">
+            <article
+              key={post.id}
+              className="p-6 bg-base-100 rounded-lg border border-gray-200 shadow-md dark:bg-base-300 dark:border-gray-700 hover:shadow-lg transition-transform duration-300 animate-fade-in-up"
+            >
               <div className="flex justify-between items-center mb-5 text-black">
                 <span className="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
-                  <svg className="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <svg
+                    className="mr-1 w-3 h-3"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
                     <path d={post.iconPath}></path>
                   </svg>
                   {post.category}
@@ -117,11 +130,17 @@ export default function BlogSection() {
               <h2 className="mb-2 text-2xl font-bold tracking-tight text-black">
                 <a href="#">{post.title}</a>
               </h2>
-              <p className="mb-5 font-light text-black dark:text-black" dangerouslySetInnerHTML={{ __html: post.content }}>
-              </p>
+              <p
+                className="mb-5 font-light text-black dark:text-black"
+                dangerouslySetInnerHTML={{ __html: post.content }}
+              ></p>
               <div className="flex justify-between items-center">
                 <div className="flex items-center space-x-4">
-                  <img className="w-7 h-7 rounded-full" src={post.author.avatar} alt={`${post.author.name} avatar`} />
+                  <img
+                    className="w-7 h-7 rounded-full"
+                    src={post.author.avatar}
+                    alt={`${post.author.name} avatar`}
+                  />
                   <span className="font-medium dark:text-white">
                     {post.author.name}
                   </span>
