@@ -27,8 +27,7 @@ export default function Hero() {
               We are Explorer
             </h1>
             <p className="text-base sm:text-lg text-gray-600 mb-6">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            Embark on an epic journey from the heights of the Himalayas to the lush plains of Nepal. A record-breaking adventure that redefines resilience and inspires wanderlust
             </p>
             <button className="btn bg-black text-white hover:text-black hover:bg-white">
               Read More
