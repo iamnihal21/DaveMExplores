@@ -46,7 +46,7 @@ function Nav() {
             <ul className="menu menu-horizontal flex space-x-6 text-black">
               {location.pathname !== "/" && (
                 <li className="hover:text-gray transition duration-200">
-                  <Link to="/" className="px-4 py-2 rounded-md text-black">
+                  <Link to="/" className="px-4 py-2 rounded-md text-black"> 
                     Home
                   </Link>
                 </li>
