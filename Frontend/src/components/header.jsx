@@ -1,21 +1,3 @@
-// import React from "react";
-// import Logo from "../assets/Logo.png";
-// function Head() {
-//   return (
-//     <>
-//       <div
-//         className="rounded navbar flex items-center justify-center"
-//         style={{ backgroundColor: "#E4D7C3" }}
-//       >
-//         <div className="h-28 avatar">
-//           <img src={Logo} className="rounded" />
-//           <a className="btn btn-ghost text-xl text-black">DaveMExplorer</a>
-//         </div>
-//       </div>
-//     </>
-//   );
-// }
-// export default Head;
 import React from "react";
 import Logo from "../assets/Logo.png";
 import { motion } from "framer-motion"; // Importing Framer Motion
@@ -47,7 +29,7 @@ function Head() {
             animate={{ opacity: 1, y: 0 }} // Final state (fully visible, at normal position)
             transition={{ duration: 1, delay: 0.5 }} // Delay for the text to appear after the logo
           >
-            DaveMExplorer
+            Dave The Traveller
           </motion.a>
         </motion.div>
       </div>
