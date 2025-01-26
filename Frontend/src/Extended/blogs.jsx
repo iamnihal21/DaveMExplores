@@ -102,10 +102,7 @@ export default function BlogSection() {
           <h2 className="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-black animate-fade-in-up">
             Our Blog
           </h2>
-          <p className="font-light text-black sm:text-xl dark:text-black animate-fade-in-up">
-            We use an agile approach to test assumptions and connect with the
-            needs of your audience early and often.
-          </p>
+          
         </div>
         <div className="grid gap-8">
           {blogPosts.map((post) => (
