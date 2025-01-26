@@ -1,6 +1,6 @@
 const aboutSections = [
   {
-    title: "A Company You Can Trust",
+    title: "A Company You Can Trust", 
     content:
       `Welcome to DaveMExplorer!
 We’re thrilled to have you join us on this incredible journey of exploration, adventure, and storytelling. At DaveMExplorer, we’re not just travel vloggers—we’re passionate wanderers who believe that every road has a story, every destination has a soul, and every adventure is worth sharing.
